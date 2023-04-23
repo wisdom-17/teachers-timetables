@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`mount LoginView component 1`] = `
+"<div class=\\"card h-screen flex justify-content-center align-items-center\\">
+  <form>
+    <div class=\\"field mt-4 grid\\"><span class=\\"p-float-label\\"><!----><label for=\\"email\\">Email</label></span></div><small class=\\"p-error\\"></small>
+    <div class=\\"field mt-4 grid\\"><span class=\\"p-float-label\\"><!----><label for=\\"password\\">Password</label></span></div><small class=\\"p-error\\"></small>
+    <div class=\\"field grid mt-4\\">
+      <!---->
+    </div>
+  </form>
+</div>"
+`;
