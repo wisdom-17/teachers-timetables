@@ -1,8 +1,8 @@
-<script setup>
-</script>
-
 <template>
-  <main>
-    <h1>Home</h1>
-  </main>
+  <EmployeeIDForm />
 </template>
+
+<script setup>
+import EmployeeIDForm from '@/components/EmployeeIDForm.vue'
+
+</script>
