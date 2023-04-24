@@ -7,34 +7,40 @@
   <div class="card h-screen flex justify-content-center align-items-center">
     <form @keyup.enter="login">
       <div class="field mt-4 grid">
-        <span class="p-float-label">
-          <InputText
-            id="email"
-            :class="{ 'p-invalid': validation.errors.email.length > 0 }"
-            type="text"
-            v-model="auth.email"
-            size="23"
-          />
-          <label for="email">Email</label>
-        </span>
+        <div class="col-12">
+          <span class="p-float-label">
+            <InputText
+              id="email"
+              :class="{ 'p-invalid': validation.errors.email.length > 0 }"
+              class="p-inputtext-lg w-full"
+              type="text"
+              v-model="auth.email"
+            />
+            <label for="email">Email</label>
+          </span>
+        </div>
       </div>
       <small class="p-error">{{ validation.errors.email[0] }}</small>
       <div class="field mt-4 grid">
-        <span class="p-float-label">
+        <div class="col-12">
+          <span class="p-float-label">
           <Password
             id="password"
             :class="{ 'p-invalid': validation.errors.password.length > 0 }"
+            class="p-inputtext-lg w-full"
             v-model="auth.password"
             :feedback="false"
             toggleMask
-            size="23"
           />
           <label for="password">Password</label>
-        </span>
+          </span>
+        </div>
       </div>
       <small class="p-error">{{ validation.errors.password[0] }}</small>
       <div class="field grid mt-4">
-        <Button @click="login" label="Login" :loading="isLoading" />
+        <div class="col-12">
+          <Button @click="login" label="Login" :loading="isLoading" class="w-full" />
+        </div>
       </div>
     </form>
   </div>
