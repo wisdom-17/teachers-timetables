@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
+import TimetableView from '../views/TimetableView.vue'
 import { useAuthStore } from '@/stores/auth'
 
 const router = createRouter({
@@ -11,6 +12,12 @@ const router = createRouter({
       name: 'home',
       meta: { requiresAuth: true },
       component: HomeView,
+    },
+    {
+      path: '/timetable',
+      name: 'timetable',
+      meta: { requiresAuth: true },
+      component: TimetableView,
     },
     {
       path: '/login',
