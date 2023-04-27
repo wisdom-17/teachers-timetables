@@ -7,7 +7,7 @@ export const useTimetableStore = defineStore({
   state: () => ({
     timetable: null,
     isLoading: false,
-    employeeID: 'A500460806',
+    employeeID: null,
   }),
   getters: {},
   actions: {
